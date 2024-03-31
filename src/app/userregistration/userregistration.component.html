@@ -1,0 +1,38 @@
+<body>
+    <div class="container">
+        <i class="fa-regular fa-registered fa-2x"></i>
+        <!-- <h2>Sign UP</h2> -->
+            <!-- <label><img src="upload_image1.png"></label> -->
+            <input type="file" name="image" id="image" accept=".jpg ,.jpeg, .png" [(ngModel)]="image.imagepath">
+        <form>
+                <span>First Name:</span>&nbsp;&nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;    &nbsp;<span> Last Name:</span>  <br>
+                <input type="text" name="firstname" placeholder="First Name" [(ngModel)]="image.firstname">&nbsp;   &nbsp;<input type="text" name="lastname" placeholder="Last Name" [(ngModel)]="image.lastname"> <br><br>
+            Email Id:&nbsp;<input type="email" name="emailid" placeholder="Email Id" [(ngModel)]="image.emailid">  <br><br>
+            Mobile No:&nbsp;<input type="number" name="mobno" placeholder="Mobile Number" [(ngModel)]="image.mobno"> <br><br>
+            Age:&nbsp;<input type="number" name="age" placeholder="Age" [(ngModel)]="image.age"> <br><br>
+            State:&nbsp;<select>
+                <option>Select your state</option>
+                <option type="text" value="Maharashtra" [(ngModel)]="state" (click)="saveState()">Maharashtra</option>
+                <option type="text" value="Delhi" [(ngModel)]="state" (click)="saveState()">Delhi</option>
+                <option type="text" value="Gujarat" [(ngModel)]="state" (click)="saveState()">Gujarat</option>
+            </select> <br><br>
+            Country:&nbsp;<select>
+                <option>Select your country</option>
+                <option type="text" value="India" [(ngModel)]="country" (click)="saveCountry()">India</option>
+                <option type="text" value="UK" [(ngModel)]="country" (click)="saveCountry()">Uk</option>
+                <option type="text" value="Austrilia" [(ngModel)]="country" (click)="saveCountry()">Austrilia</option>
+            </select> <br><br>
+
+            Tags:&nbsp;<input type="checkbox" value="cricket" [(ngModel)]="tag" (change)="saveTag()">Cricket
+            <input type="checkbox" value="football" [(ngModel)]="tag" (change)="saveTag()">Cricket
+            <input type="checkbox" value="hockey"  [(ngModel)]="tag" (change)="saveTag()">hockey
+
+            <br><br>
+
+            <input type="checkbox" value="yes">subscribe to newsletter 
+            <br><br>
+            <button (click)="Cancel()">Cancel</button>
+            <button (click)="Submit()">Submit</button>
+        </form>
+    </div>
+</body>

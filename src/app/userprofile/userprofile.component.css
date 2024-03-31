@@ -1,0 +1,31 @@
+.my-image {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  button
+  {
+    width: 20%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+  }
+  button:hover
+  {
+    background-color:red;
+  }
+  input
+  {
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    background-color:#353935;
+    border:0;
+    color:aliceblue;
+}
